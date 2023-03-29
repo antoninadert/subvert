@@ -2,9 +2,9 @@ FROM php:8.2-alpine
 
 RUN touch /usr/local/etc/php/php.ini
 
-RUN echo "memory_limit = 512M" >> /usr/local/etc/php/php.ini
-RUN echo "upload_max_filesize = 128M" >> /usr/local/etc/php/php.ini
-RUN echo "post_max_size = 128M" >> /usr/local/etc/php/php.ini
+RUN echo "memory_limit = 2048M" >> /usr/local/etc/php/php.ini
+RUN echo "upload_max_filesize = 1024M" >> /usr/local/etc/php/php.ini
+RUN echo "post_max_size = 1024M" >> /usr/local/etc/php/php.ini
 
 RUN apk add --no-cache ffmpeg
 
